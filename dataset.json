@@ -1,0 +1,730 @@
+[
+  {
+    "group": "short",
+    "id": 331,
+    "english": "Congratulations!",
+    "aiMizo": "Chibai ka buk che!",
+    "finalMizo": "Ka lawmpui a che.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 332,
+    "english": "Well done!",
+    "aiMizo": "I ti tha!",
+    "finalMizo": "I ti tha e.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 333,
+    "english": "Good luck!",
+    "aiMizo": "I vannei ang!",
+    "finalMizo": "Tha deuhin le.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 334,
+    "english": "I'm rooting for you.",
+    "aiMizo": "Ka thlawp che.",
+    "finalMizo": "Ka thlawp che.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 335,
+    "english": "I agree.",
+    "aiMizo": "Ka pawm.",
+    "finalMizo": "Ka pawm.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 336,
+    "english": "I disagree.",
+    "aiMizo": "Ka pawm lo.",
+    "finalMizo": "Ka pawm lo.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 337,
+    "english": "I understand.",
+    "aiMizo": "Ka hrethiam.",
+    "finalMizo": "Ka hrethiam.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 338,
+    "english": "I don't understand.",
+    "aiMizo": "Ka hrethiam lo.",
+    "finalMizo": "Ka hrethiam lo.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 339,
+    "english": "I know.",
+    "aiMizo": "Ka hria.",
+    "finalMizo": "Ka hria.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 340,
+    "english": "I don't know.",
+    "aiMizo": "Ka hre lo.",
+    "finalMizo": "Ka hre lo.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 341,
+    "english": "I remember.",
+    "aiMizo": "Ka hre reng.",
+    "finalMizo": "Ka hre reng.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 342,
+    "english": "I forgot.",
+    "aiMizo": "Ka theihnghilh.",
+    "finalMizo": "Ka theihnghilh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 343,
+    "english": "Can you explain it?",
+    "aiMizo": "Min hrilhfiah thei em?",
+    "finalMizo": "Min hrilhfiah thei em?",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 344,
+    "english": "I need more time.",
+    "aiMizo": "Hun tam zawk ka mamawh.",
+    "finalMizo": "Hun tam zawk ka mamawh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 345,
+    "english": "I'm not ready yet.",
+    "aiMizo": "Ka inpeih hrih lo.",
+    "finalMizo": "Ka la in peih lo.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 346,
+    "english": "I'm ready now.",
+    "aiMizo": "Ka inpeih tawh.",
+    "finalMizo": "Ka inpeih tawh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 347,
+    "english": "Let's start.",
+    "aiMizo": "Tan ang.",
+    "finalMizo": "Tan ang.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 348,
+    "english": "Let's stop here.",
+    "aiMizo": "Hetah hian tawp ang.",
+    "finalMizo": "Hetah hian tawp ang.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 349,
+    "english": "Let's try again.",
+    "aiMizo": "Tum leh ang.",
+    "finalMizo": "Tum leh ang.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 350,
+    "english": "One more time.",
+    "aiMizo": "Vawikhat leh.",
+    "finalMizo": "Vawikhat leh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 351,
+    "english": "Slowly, please.",
+    "aiMizo": "Zawi deuhin rawh.",
+    "finalMizo": "Zawimuangin, khawngaihin.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 352,
+    "english": "Speak louder.",
+    "aiMizo": "Rin deuh rawh.",
+    "finalMizo": "Tawng ring rawh.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 353,
+    "english": "Please speak slowly.",
+    "aiMizo": "Zawi deuhin tawng rawh.",
+    "finalMizo": "Khawngaihin muangchangin tawng rawh.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 354,
+    "english": "What does this mean?",
+    "aiMizo": "Hei hi eng nge a awmzia?",
+    "finalMizo": "Hei hi eng nge a awmzia?",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 355,
+    "english": "How do you say this in Mizo?",
+    "aiMizo": "Hei hi Mizo tawngin engtin nge an sawi?",
+    "finalMizo": "Hei hi Mizo tawngin engtin nge an sawi?",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 356,
+    "english": "How do you pronounce this?",
+    "aiMizo": "Hei hi engtin nge an chhiar?",
+    "finalMizo": "Hei hi engtin nge in lam?",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 357,
+    "english": "Can you repeat that?",
+    "aiMizo": "Chu chu sawi nawn leh thei em?",
+    "finalMizo": "I sawi nawn leh thei em?",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 358,
+    "english": "Please write it down.",
+    "aiMizo": "Ziah rawh.",
+    "finalMizo": "Khawngaihin ziak rawh.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 359,
+    "english": "Show me an example.",
+    "aiMizo": "Entirna min pe rawh.",
+    "finalMizo": "Entirna min pe rawh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 360,
+    "english": "I want to learn Mizo.",
+    "aiMizo": "Mizo tawng ka zir duh.",
+    "finalMizo": "Mizo tawng ka zir duh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 361,
+    "english": "I am learning Mizo.",
+    "aiMizo": "Mizo tawng ka zir mek.",
+    "finalMizo": "Mizo tawng ka zir mek.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 362,
+    "english": "Can you teach me?",
+    "aiMizo": "Min zirtir thei em?",
+    "finalMizo": "Min zirtir thei em?",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 363,
+    "english": "I'm improving.",
+    "aiMizo": "Ka than len mek.",
+    "finalMizo": "Hma ka sawn mek.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 364,
+    "english": "I made a mistake.",
+    "aiMizo": "Ka tih sual.",
+    "finalMizo": "Ka tih sual.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 365,
+    "english": "Please correct me.",
+    "aiMizo": "Min siam tha rawh.",
+    "finalMizo": "Min siam tha rawh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 366,
+    "english": "Thank you for teaching me.",
+    "aiMizo": "Min zirtir avangin ka lawm e.",
+    "finalMizo": "Min zirtir avangin ka lawm e.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 367,
+    "english": "You're a good teacher.",
+    "aiMizo": "Zirtirtu tha i ni.",
+    "finalMizo": "Zirtirtu tha i ni.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 368,
+    "english": "I need more practice.",
+    "aiMizo": "Practice tam zawk ka ngai.",
+    "finalMizo": "Practice tam ka mamawh.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 369,
+    "english": "Let's practice together.",
+    "aiMizo": "In zir dun ang.",
+    "finalMizo": "In zir dun ang.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 370,
+    "english": "I want to speak Mizo fluently.",
+    "aiMizo": "Mizo tawngin ka thiam tak duh.",
+    "finalMizo": "Mizo tawngin thiam takin ka tawng duh.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 371,
+    "english": "I want to understand better.",
+    "aiMizo": "Ka hrethiam tha zawk duh.",
+    "finalMizo": "Chiang taka hriatthiam ka duh.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 372,
+    "english": "I'm getting better every day.",
+    "aiMizo": "Ni tin ka tha zawk.",
+    "finalMizo": "Nitin hma ka sawn.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 373,
+    "english": "I will keep practicing.",
+    "aiMizo": "Practice ka nei zel ang.",
+    "finalMizo": "Ka practice zel ang.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 374,
+    "english": "Never give up.",
+    "aiMizo": "Bansan suh.",
+    "finalMizo": "Beidawng suh.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 375,
+    "english": "Keep going.",
+    "aiMizo": "Kal zel rawh.",
+    "finalMizo": "Kal zel rawh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 376,
+    "english": "You're doing great.",
+    "aiMizo": "I ti tha hle.",
+    "finalMizo": "I ti tha lutuk e.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 377,
+    "english": "Don't stop now.",
+    "aiMizo": "Tawp suh.",
+    "finalMizo": "Tawp suh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 378,
+    "english": "You are getting closer.",
+    "aiMizo": "I thlen dawn tep tawh.",
+    "finalMizo": "I thleng tep tawh.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 379,
+    "english": "You are almost there.",
+    "aiMizo": "I thleng tep tawh.",
+    "finalMizo": "I thleng tep tawh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 380,
+    "english": "Don't be afraid.",
+    "aiMizo": "Hlau suh.",
+    "finalMizo": "Hlau suh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 381,
+    "english": "You can do anything.",
+    "aiMizo": "Engpawh i ti thei.",
+    "finalMizo": "Engpawh i ti thei.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 382,
+    "english": "Believe in yourself.",
+    "aiMizo": "I mahni in ring rawh.",
+    "finalMizo": "Mahni inring tawk rawh.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 383,
+    "english": "You are stronger than you think.",
+    "aiMizo": "I in ngaih aia chak zawk i ni.",
+    "finalMizo": "I rin aiin i chak a nia.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 384,
+    "english": "Great job!",
+    "aiMizo": "I ti tha hle!",
+    "finalMizo": "I ti tha hle!",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 385,
+    "english": "I am proud of you.",
+    "aiMizo": "Ka chhuang che.",
+    "finalMizo": "Ka chhuang che.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 386,
+    "english": "You did it!",
+    "aiMizo": "I ti thei!",
+    "finalMizo": "I ti thei!",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 387,
+    "english": "Don't give up. Keep trying.",
+    "aiMizo": "Beidawng suh. Bei zel rawh.",
+    "finalMizo": "Beidawng suh. Bei zel rawh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 388,
+    "english": "I believe in you.",
+    "aiMizo": "Ka ring che.",
+    "finalMizo": "Ka ring che.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 389,
+    "english": "Let's do our best.",
+    "aiMizo": "Kan theih ang ang kan ti ang.",
+    "finalMizo": "Theihtawp i chhuah tlang ang u.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 390,
+    "english": "Together, we can do it.",
+    "aiMizo": "Dun takin kan ti thei.",
+    "finalMizo": "A rualin, kan ti thei.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 391,
+    "english": "Let's go together.",
+    "aiMizo": "Dun takin kal ang.",
+    "finalMizo": "I kal tlang ang.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 392,
+    "english": "I'm here for you.",
+    "aiMizo": "Nang tan ka awm.",
+    "finalMizo": "I tan ka awm.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 393,
+    "english": "You are not alone.",
+    "aiMizo": "I mahni chauh i ni lo.",
+    "finalMizo": "I mal lo.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 394,
+    "english": "Everything will be okay.",
+    "aiMizo": "Engkim a tha ang.",
+    "finalMizo": "Engkim a tha leh vek mai ang.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 395,
+    "english": "Better days are coming.",
+    "aiMizo": "Ni tha zawk a lo thleng dawn.",
+    "finalMizo": "Ni tha zawk a lo thleng dawn.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 396,
+    "english": "Don't lose hope.",
+    "aiMizo": "Beidawng suh.",
+    "finalMizo": "Beidawng suh.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 397,
+    "english": "Stay strong.",
+    "aiMizo": "Chak rawh.",
+    "finalMizo": "Chhel takin awm rawh.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 398,
+    "english": "I'm always here to help you.",
+    "aiMizo": "I tanpui turin ka awm reng.",
+    "finalMizo": "Tanpui tur che in ka awm reng.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 399,
+    "english": "You can talk to me anytime.",
+    "aiMizo": "Engtik lai pawhin min biak thei.",
+    "finalMizo": "Engtik lai pawhin min be thei.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 400,
+    "english": "I will support you.",
+    "aiMizo": "Ka thlawp che ang.",
+    "finalMizo": "Ka thlawp ang che.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 401,
+    "english": "I'm so happy for you.",
+    "aiMizo": "I avangin ka lawm hle.",
+    "finalMizo": "I chungah ka lawm hle mai.",
+    "status": "corrected"
+  },
+  {
+    "group": "short",
+    "id": 402,
+    "english": "I miss you.",
+    "aiMizo": "Ka ngai che.",
+    "finalMizo": "Ka ngai che.",
+    "status": "correct"
+  },
+  {
+    "group": "short",
+    "id": 403,
+    "english": "I was thinking about you.",
+    "aiMizo": "Ka ngaihtuah che.",
+    "finalMizo": "Ka ngaihtuah che.",
+    "status": "correct"
+  },
+  {
+    "group": "long",
+    "id": 1,
+    "english": "I was planning to go out today, but I decided to stay home because the weather looks like it might rain.",
+    "aiMizo": "Vawiin chuan pawna kal ka tum a, mahse ruah sur tur anga a lan avangin inah awm zawk ka thlang ta.",
+    "finalMizo": "Vawiin chuan pawna kal ka tum a, mahse ruah sur tur anga a lan avangin inah awm zawk ka thlang ta.",
+    "status": "correct"
+  },
+  {
+    "group": "long",
+    "id": 2,
+    "english": "Even though I was very tired after work, I still decided to finish what I had started before going to sleep.",
+    "aiMizo": "Hna ka thawh zawh chuan ka chau hle mahse, mu tur hmain ka tan tawh kha ka zawh hnu zawk ka tum ta.",
+    "finalMizo": "Hna thawh zawhah chuan ka chau lutuk a mahse, mut hmain hna kha zawh law law ka duh.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 3,
+    "english": "I wanted to call you last night, but I thought you might already be asleep, so I decided not to disturb you.",
+    "aiMizo": "Zan khan call ka tum che a, mahse i mu tawh ang tih ka ngaihtuah avangin, i buai lo turin ka call ta lo.",
+    "finalMizo": "Nizanah khan call che ka tum a mahse, i mut tawh ka ring a, ka lo tibuai duh lo che a.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 4,
+    "english": "When I arrived at the bus stop, I realized that I had forgotten my wallet at home, so I had to go back and get it.",
+    "aiMizo": "Bus stop ka thlen chuan, ka wallet inah ka theihnghilh tih ka hre chhuak a, chuvangin lak turin ka haw leh a ngai ta.",
+    "finalMizo": "Bus stop ka thlen chuan, ka wallet inah ka theihnghilh tih ka hre chhuak a, chuvangin lak turin ka haw leh a ngai.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 5,
+    "english": "I was going to leave earlier, but I waited for my friend because we had planned to travel together.",
+    "aiMizo": "Ka hma deuhin kal ka tum a, mahse rualin kal kan ruat tawh avangin ka friend ka nghak.",
+    "finalMizo": "Hma takah chhuah ka tum a mahse, thiante nen a ruala kal kan tum sia, ka nghak.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 6,
+    "english": "If you finish your work early tomorrow, we can meet somewhere and have dinner together.",
+    "aiMizo": "Naktukah i hna i zawh hma deuh thei chuan, khawi hmun emawah kan in hmu ang a, rualin zanriah kan ei ang.",
+    "finalMizo": "Naktukah i hna i zawh hma deuh theih chuan, khawi hmunah emaw in hmu in dinner kan ei dun thei ang.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 7,
+    "english": "I have been waiting for you for a long time, so please let me know if you are going to be late.",
+    "aiMizo": "Rei tak che ka nghak tawh a, chuvangin i tlai dawn chuan min hrilh lawk rawh.",
+    "finalMizo": "Rei tak ka lo nghak tawh che a, chuvangin i tlai dawn chuan min hrilh lawk tawh rawh.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 8,
+    "english": "I don’t know whether I will have enough time to finish everything today, but I will do my best to complete it.",
+    "aiMizo": "Vawiin hian engkim zawh tur hun ka nei tawk ang em ka hre lo, mahse ka theihtawp chhuah thlapin ka zawh ang.",
+    "finalMizo": "Vawiin hian ka zo hman kher dawn em ka hre lo, mahse zo fel turin theihtawp ka chhuah ang e.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 9,
+    "english": "I was surprised when I heard the news because nobody had told me anything about it before.",
+    "aiMizo": "Thuthar ka hriat chuan ka mak hle, a chhan chu tumah chuan a chungchang min hrilh lawk lo va.",
+    "finalMizo": "Thuthar ka hriat khan mak ka ti lutuk a, a chhan chu tuman min lo la hrilh si lo a.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 10,
+    "english": "Although I was nervous at first, I became more confident after I understood what I was supposed to do.",
+    "aiMizo": "A tirah chuan ka zam hle, mahse ka tih tur chu ka hrethiam hnu chuan ka huaisen zawk ta.",
+    "finalMizo": "A tirah chuan ka zam hle, mahse ka tih tur chu ka hrethiam hnu chuan ka huaisen zawk ta.",
+    "status": "correct"
+  },
+  {
+    "group": "long",
+    "id": 11,
+    "english": "I would like to visit that place someday because I have heard many people say that it is very beautiful and peaceful.",
+    "aiMizo": "Ni khat chu hmun kha tlawh ka duh, mi tam takin a mawi tak leh nuam an tih ka lo hria a ni.",
+    "finalMizo": "Engtikah emaw ka kal ve ka duh, a chhan chu mi ten a mawi in a zalen tiin an sawi a.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 12,
+    "english": "I wanted to help you yesterday, but I was busy at that time, so I couldn't come.",
+    "aiMizo": "Nimin khan ka tanpui ka duh a, mahse chu hun lai chuan ka buai avangin ka lo kal thei lo.",
+    "finalMizo": "Nimin khan puih che chu ka duh a, mahse ka buai ve lai tak a nia, ka lo kal theih loh phah.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 13,
+    "english": "Before you leave, please make sure that you have everything you need because you may not be able to come back later.",
+    "aiMizo": "I chhuah hmain i mamawh zawng zawng i nei vek tih enfiah rawh, nakinah i lo kir leh thei lo mai thei.",
+    "finalMizo": "I chhuah hmain i mamawh zawng zawng i nei vek tih enfiah rawh, nakinah i lo kir leh thei lo mai thei.",
+    "status": "correct"
+  },
+  {
+    "group": "long",
+    "id": 14,
+    "english": "I didn’t expect the meeting to take so long, but we still had many important things to discuss before we could leave.",
+    "aiMizo": "Meeting rei lutuk tur ka beisei lo, mahse kan chhuah hma chuan sawi tur thil pawimawh tam tak kan la nei.",
+    "finalMizo": "Meeting rei lutuk tur ka beisei lo, mahse kan chhuah hma chuan sawi tur thil pawimawh tam tak kan la nei.",
+    "status": "correct"
+  },
+  {
+    "group": "long",
+    "id": 15,
+    "english": "Whenever I have a difficult problem, I try to stay calm and think carefully before making a decision.",
+    "aiMizo": "Buaina harsa ka nei apiangin, inthlahdah lo takin ka ngaihtuah fiah hmasa a, chumi hnuah chuan thutlukna ka siam.",
+    "finalMizo": "Buaina harsa ka nei apiangin, inthlahdah lo takin ka ngaihtuah fiah hmasa a, chumi hnuah chuan thutlukna ka siam.",
+    "status": "correct"
+  },
+  {
+    "group": "long",
+    "id": 16,
+    "english": "If the weather is good tomorrow, I plan to go out with my friends and spend the whole day enjoying ourselves.",
+    "aiMizo": "Naktukah boruak a tha chuan, ka thiante nen pawna kalin ni pum pui nuam takin kan hmang turin ka ruat.",
+    "finalMizo": "Naktukah khua a tha chuan, ka thiante nen chhuah a ni leng a in kawm hlim kan tum a ni.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 17,
+    "english": "Even if things do not go according to my plan, I will try to remain positive and find another way to solve the problem.",
+    "aiMizo": "Ka ruat angin thil a kal lo pawhin, rilru tha nei reng tumin buaina sutkian nan kawng dang ka zawng ang.",
+    "finalMizo": "Ka beisei loh dana thil a kal pawhin, rilru fim tak puin kawng dang zawn ka tum ang.",
+    "status": "corrected"
+  },
+  {
+    "group": "long",
+    "id": 18,
+    "english": "I am grateful for everything you have done for me, and I will always remember your kindness.",
+    "aiMizo": "Ka tan i tihsak zawng zawng avangin ka lawm hle a, i thatna chu ka hre reng ang.",
+    "finalMizo": "I thil min tih sak zawng zawng ah khan ka lawm tak zet, chuan i thatna chu ka hre reng ang.",
+    "status": "corrected"
+  }
+]
