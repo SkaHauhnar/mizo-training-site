@@ -1,1 +1,0 @@
-import Trainer from "./trainer"; export default function Page(){return <Trainer/>}
