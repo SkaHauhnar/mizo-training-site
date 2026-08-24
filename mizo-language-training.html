@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mizo Language Training</title>
+<style>
+:root{--bg:#0b1020;--card:#131a2d;--card2:#1a2340;--line:#2c385b;--text:#f5f7ff;--muted:#aeb9d5;--blue:#7aa2ff;--green:#3ddc97;--orange:#ffbd59;--red:#ff7088}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#080d1b,#11182b 55%,#0a0f1d);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}
+.app{max-width:760px;margin:auto;padding:18px 14px 40px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:8px 0 18px}
+h1{font-size:22px;margin:0} .sub{font-size:13px;color:var(--muted);margin-top:4px}
+.progress{font-size:13px;color:#dfe6ff;text-align:right}.bar{height:8px;background:#222c49;border-radius:99px;overflow:hidden;margin-top:6px;width:130px}.fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--green));width:0%}
+.tabs{display:flex;gap:8px;background:#11182b;border:1px solid var(--line);padding:6px;border-radius:14px;margin-bottom:14px}
+.tab{flex:1;border:0;background:transparent;color:var(--muted);padding:10px;border-radius:10px;font-weight:700}.tab.active{background:var(--card2);color:white}
+.card{background:rgba(19,26,45,.96);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 12px 32px rgba(0,0,0,.18)}
+.label{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--blue);text-transform:uppercase;margin-bottom:8px}
+.sentence{font-size:22px;line-height:1.45;font-weight:650;margin-bottom:20px}.mizo{background:#0c1325;border:1px solid #263557;border-radius:14px;padding:14px;font-size:19px;line-height:1.5;min-height:64px}
+.status{margin-top:12px;font-size:13px;color:var(--muted)}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+button{font:inherit;cursor:pointer}.btn{border:0;border-radius:13px;padding:13px 12px;font-weight:800;color:white;background:#29385f}.correct{background:var(--green);color:#07150e}.next{background:var(--blue);color:#07101e}.secondary{border:1px solid var(--line);background:transparent;color:#dbe3ff}
+textarea,input{width:100%;background:#0a1121;border:1px solid #2b395c;color:white;border-radius:13px;padding:13px;font:inherit;outline:none}textarea:focus,input:focus{border-color:var(--blue)}
+.correction{display:none;margin-top:14px}.correction.show{display:block}.smallrow{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.small{padding:9px 11px;border-radius:11px}
+.bottom{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.bottom button{flex:1;min-width:130px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.stat{background:#11182b;border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center}.stat b{display:block;font-size:20px}.stat span{font-size:11px;color:var(--muted)}
+.panel{margin-top:14px}.hidden{display:none!important}.note{font-size:12px;color:var(--muted);line-height:1.45;margin-top:12px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.65);display:none;align-items:flex-end;justify-content:center;padding:12px;z-index:5}.modal.show{display:flex}.sheet{width:min(760px,100%);max-height:85vh;overflow:auto;background:#121a2e;border:1px solid var(--line);border-radius:22px;padding:18px}
+.listitem{padding:12px;border-bottom:1px solid #26314e;font-size:14px}.listitem small{display:block;color:var(--muted);margin-top:4px}.close{float:right;background:#283657;border:0;color:white;border-radius:9px;padding:8px 10px}
+@media(max-width:430px){.sentence{font-size:19px}.mizo{font-size:17px}.app{padding:12px 10px 30px}.actions{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <div><h1>Mizo Language Training</h1><div class="sub">English → AI Mizo → C / Correction → Save → Next</div></div>
+  <div class="progress"><span id="counter"></span><div class="bar"><div class="fill" id="fill"></div></div></div>
+</header>
+
+<div class="tabs">
+  <button class="tab active" id="shortTab" onclick="setMode('short')">Short sentences</button>
+  <button class="tab" id="longTab" onclick="setMode('long')">Long sentences</button>
+</div>
+
+<div class="stats">
+  <div class="stat"><b id="done">0</b><span>Saved</span></div>
+  <div class="stat"><b id="corrected">0</b><span>Corrections</span></div>
+  <div class="stat"><b id="total">0</b><span>Total</span></div>
+</div>
+
+<main class="card">
+  <div class="label" id="numberLabel">Sentence</div>
+  <div class="sentence" id="english"></div>
+
+  <div class="label">AI Mizo / Current Mizo</div>
+  <div class="mizo" id="mizo"></div>
+
+  <div class="status" id="status">Choose C if correct, or enter your correction.</div>
+
+  <div class="actions">
+    <button class="btn correct" onclick="markCorrect()">C — Correct</button>
+    <button class="btn secondary" onclick="openCorrection()">Correct / Edit</button>
+  </div>
+
+  <div class="correction" id="correctionBox">
+    <div class="label" style="margin-top:16px">Your Mizo correction</div>
+    <textarea id="correction" rows="4" placeholder="Correct Mizo sentence here..."></textarea>
+    <div class="smallrow">
+      <button class="btn next small" onclick="saveCorrection()">Save correction</button>
+      <button class="btn secondary small" onclick="closeCorrection()">Cancel</button>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <button class="btn secondary" onclick="prev()">← Previous</button>
+    <button class="btn next" onclick="next()">Save & Next →</button>
+  </div>
+</main>
+
+<div class="panel card">
+  <div class="label">Data</div>
+  <div class="bottom">
+    <button class="btn secondary" onclick="showSaved()">View saved</button>
+    <button class="btn secondary" onclick="exportData()">Export JSON</button>
+    <button class="btn secondary" onclick="document.getElementById('importFile').click()">Import JSON</button>
+    <input id="importFile" type="file" accept="application/json" class="hidden" onchange="importData(event)">
+  </div>
+  <div class="note">All corrections are stored on this device in the browser. Export JSON anytime so you can later import the training data into your app. Voice field is already reserved in the data structure and can be added later.</div>
+</div>
+</div>
+
+<div class="modal" id="modal"><div class="sheet"><button class="close" onclick="closeModal()">Close</button><h2>Saved training data</h2><div id="savedList"></div></div></div>
+
+<script>
+const baseData={
+short:[
+["I am here for you.","I tan ka awm."],
+["You are not alone.","I mal lo."],
+["Everything will be okay.","Engkim a tha leh vek mai ang."],
+["Be strong.","Chhel takin awm rawh."],
+["I am always here to help you.","Tanpui tur che in ka awm reng."],
+["You can talk to me anytime.","Engtik lai pawhin min be thei."],
+["I will support you.","Ka thlawp ang che."],
+["I am very happy for you.","I chungah ka lawm hle mai."],
+["I have reached.","Ka thleng tawh."],
+["I will do my best.","Theihtawp ka chhuah ang."],
+["I will go through it with you.","I kal tlang ang."],
+["I can do it.","A rualin, ka ti thei."],
+["I trust you.","I rin aiin i chak ania."],
+["I can remember myself.","Mahni inring tawk rawh."],
+["I will wait.","Ka nghak ang."],
+["Tell me when you arrive.","I thlen hian min hrilh rawh."],
+["I will come later.","Nakinah ka lo kal ang."],
+["Let us continue.","Kan kalpui zel ang."],
+["Thank you for helping me.","Min tanpui avangin lawm e."],
+["See you tomorrow.","Naktukah kan in hmu ang."]
+],
+long:[
+["I am very tired after work, but I still want to finish the work before sleeping.","Hna thawh zawhah chuan ka chau lutuk a mahse mut hmain hna kha zawh law law ka duh."],
+["Yesterday I wanted to call you, but I thought you were already asleep, so I did not want to disturb you.","Nizanah khan call che ka tum a mahse, i mut tawh ka ring a, ka lo tibuai duhlo che a."],
+["I wanted to leave early, but we planned to go together with my friends, so I waited.","Hma takah chhuah ka tum a mahse thiante nen a ruala kal kan tum sia ka nghak."],
+["If you can finish your work a little early tomorrow, we can meet somewhere and have dinner together.","Naktukah i hna i zawh hma deuh theih chuan, khawi hmunah emaw in hmu in dinner kan ei dun thei ang."],
+["I have been waiting for you for a long time, so if you are going to be late, please tell me beforehand.","Rei tak ka lo nghak tawh che a, chuvangin i tlai dawn chuan min hrilh lawk tawh rawh."],
+["I do not know whether I can finish today, but let us do our best to complete it.","Vawiin hian ka zo hman kher dawn em ka hrelo, mahse zo fel turin theihtawp kan chhuah ang."],
+["When I heard the news, I was very surprised because nobody had told me about it before.","Thuthar ka hriat khan mak ka ti lutuk a, a chhan chu tuman min lo la hrilh silo a."],
+["I want to go there someday because people say it is beautiful and peaceful.","Engtikah emaw ka kal ve ka duh, a chhan chu mi ten a mawi in a zalen tiin an sawi a."],
+["I wanted to help you yesterday, but I was also very busy, so I could not come.","Nimin khan puih che chu ka duh a, mahse ka buai ve lai tak a nia, ka lo kal theih loh phah."],
+["If the weather is good tomorrow, I plan to go out and have a happy day with my friends.","Naktukah khua a that chuan, ka thiante nen chhuah a nileng a in kawm hlim kan tum ani."],
+["Even if things do not go as I expected, I will try to find another way with a calm mind.","Ka beisei loh dana thil a kal pawhin, rilru fim tak puin kawng dang zawn ka tum ang."],
+["I am very thankful for everything you have done for me, and I will always remember your kindness.","I thil min tih sak zawng zawng ah khan ka lawm tak zet, chuan i thatna chu ka hre reng ang."]
+]};
+let state=JSON.parse(localStorage.getItem('mizoTrainingState')||'{}');
+if(!state.saved)state.saved={};
+if(!state.index)state.index={short:0,long:0};
+if(!state.mode)state.mode='short';
+
+function items(){return baseData[state.mode]}
+function key(){return state.mode+":"+state.index[state.mode]}
+function current(){return items()[state.index[state.mode]]}
+function setMode(m){state.mode=m;saveState();render()}
+function saveState(){localStorage.setItem('mizoTrainingState',JSON.stringify(state))}
+function render(){
+  const data=items(), i=state.index[state.mode], item=current();
+  document.getElementById('shortTab').classList.toggle('active',state.mode==='short');
+  document.getElementById('longTab').classList.toggle('active',state.mode==='long');
+  document.getElementById('numberLabel').textContent=(state.mode==='short'?'Short':'Long')+' sentence #'+(i+1);
+  document.getElementById('english').textContent=item[0];
+  document.getElementById('mizo').textContent=(state.saved[key()]?.finalMizo)||item[1];
+  const saved=Object.keys(state.saved).length;
+  const corrections=Object.values(state.saved).filter(x=>x.type==='correction').length;
+  document.getElementById('done').textContent=saved;document.getElementById('corrected').textContent=corrections;document.getElementById('total').textContent=baseData.short.length+baseData.long.length;
+  document.getElementById('counter').textContent=(i+1)+' / '+data.length;
+  document.getElementById('fill').style.width=((i+1)/data.length*100)+'%';
+  document.getElementById('correctionBox').classList.remove('show');
+  document.getElementById('correction').value='';
+  document.getElementById('status').textContent=state.saved[key()]?'Saved: '+state.saved[key()].type:'Choose C if correct, or enter your correction.';
+}
+function markCorrect(){state.saved[key()]={english:current()[0],finalMizo:current()[1],type:'correct',voice:null,updatedAt:new Date().toISOString()};saveState();next()}
+function openCorrection(){document.getElementById('correctionBox').classList.add('show');document.getElementById('correction').focus()}
+function closeCorrection(){document.getElementById('correctionBox').classList.remove('show')}
+function saveCorrection(){let v=document.getElementById('correction').value.trim();if(!v){alert('Please enter your Mizo correction.');return}state.saved[key()]={english:current()[0],finalMizo:v,type:'correction',voice:null,updatedAt:new Date().toISOString()};saveState();next()}
+function next(){let m=state.mode;state.index[m]=(state.index[m]+1)%items().length;saveState();render()}
+function prev(){let m=state.mode;state.index[m]=(state.index[m]-1+items().length)%items().length;saveState();render()}
+function exportData(){const out={project:'Mizo Language Training',version:1,exportedAt:new Date().toISOString(),data:state.saved};const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:'application/json'}));a.download='mizo-training-data.json';a.click();URL.revokeObjectURL(a.href)}
+function importData(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);state.saved=d.data||d;saveState();render();alert('Training data imported.')}catch{alert('Invalid JSON file.')}};r.readAsText(f)}
+function showSaved(){const el=document.getElementById('savedList');const vals=Object.entries(state.saved);el.innerHTML=vals.length?vals.map(([k,v])=>`<div class="listitem"><b>${k}</b><br>${escapeHtml(v.english)}<small>${escapeHtml(v.finalMizo)} — ${v.type}</small></div>`).join(''):'<p>No saved data yet.</p>';document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+render();
+</script>
+</body></html>
